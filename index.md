@@ -21,7 +21,14 @@ Hi! My name is Kailyn Sanford.
 ### socials
 
 
-<a href="https://x.com/kaynextdoorz?s=21" class="button small" style="background-color: #f4f4f4ff">
-    <span style="color: #1a41a2ff">twt !</span>
-</a>
+<button
+background-color: #dddfdeff;
+color: #1f1f8eff;
+text-align: center;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+padding: 10px 24px;
+onclick="window.location.href='x.com'"
+>twt!</button>
 
