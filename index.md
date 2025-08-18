@@ -21,14 +21,18 @@ Hi! My name is Kailyn Sanford.
 ### socials
 
 
-<button
-background-color: #dddfdeff;
-color: #1f1f8eff;
-text-align: center;
-font-size: 16px;
-margin: 4px 2px;
-cursor: pointer;
-padding: 10px 24px;
-onclick="window.location.href='x.com'"
->twt!</button>
+<button 
+  style="background-color: #dddfdeff;
+         color: #1f1f8eff;
+         text-align: center;
+         font-size: 16px;
+         margin: 4px 2px;
+         cursor: pointer;
+         padding: 10px 24px;
+         border: none;
+         border-radius: 6px;"
+  onclick="window.location.href='https://x.com'"
+>
+  twt!
+</button>
 
