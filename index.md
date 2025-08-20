@@ -16,9 +16,7 @@ Hi! My name is Kailyn Sanford.
 | Scrummer     | Aadit    | github.com/aaadit/student           | downstream (fork)     | student   |
 
 
-## find me !!
-
-### socials
+## socials
 
 
 <a href="https://x.com" 
@@ -34,5 +32,35 @@ Hi! My name is Kailyn Sanford.
           text-decoration: none;
           display: inline-block;">
   twt!
+</a>
+
+<a href="https://x.com" 
+   style="background-color: #dddfdeff;
+          color: #d72986ff;
+          text-align: center;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+          padding: 10px 24px;
+          border: none;
+          border-radius: 6px;
+          text-decoration: none;
+          display: inline-block;">
+  insta !
+</a>
+
+<a href="https://x.com" 
+   style="background-color: #dddfdeff;
+          color: #4d089cff;
+          text-align: center;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+          padding: 10px 24px;
+          border: none;
+          border-radius: 6px;
+          text-decoration: none;
+          display: inline-block;">
+  disc !
 </a>
 
