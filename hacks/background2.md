@@ -2,8 +2,8 @@
 layout: base
 title: Background with Object
 description: Use JavaScript to have an in motion background.
-sprite: images/platformer/sprites/flying-ufo.png
-background: images/platformer/backgrounds/alien_planet1.jpg
+sprite: images/platformer/sprites/chiikawa.png
+background: images/platformer/backgrounds/chiikawa-bg.jpeg
 permalink: /background2
 ---
 
@@ -37,9 +37,9 @@ permalink: /background2
 
   // Called when both images are loaded
   function startGameWorld() {
-    if (imagesLoaded < 2) return; // Wait until both are ready
+    if (imagesLoaded < 2) return; 
 
-    // Generic object that can be drawn on the canvas
+    // draws object onto the canvas
     class GameObject {
       constructor(image, width, height, x = 0, y = 0, speedRatio = 0) {
         this.image = image;
@@ -63,23 +63,23 @@ permalink: /background2
         super(image, gameWorld.width, gameWorld.height, 0, 0, 0.1);
       }
       update() {
-        // Move background to the left, looping seamlessly
+        // moves background to the left, makes a background loop
         this.x = (this.x - this.speed) % this.width;
       }
       draw(ctx) {
-        // Draw background twice for seamless scrolling
+        // makes the background twice so that it's seemless in transitioning.
         ctx.drawImage(this.image, this.x, this.y, this.width, this.height);
         ctx.drawImage(this.image, this.x + this.width, this.y, this.width, this.height);
       }
     }
 
-    // Player class with floating animation
+    // creates the player
     class Player extends GameObject {
       constructor(image, gameWorld) {
-        // Scale sprite down by half
-        const width = image.naturalWidth / 2;
-        const height = image.naturalHeight / 2;
-        // Center player on the canvas
+        // scales the sprite times three
+        const width = image.naturalWidth * 3;
+        const height = image.naturalHeight * 3;
+        // centers player
         const x = (gameWorld.width - width) / 2;
         const y = (gameWorld.height - height) / 2;
         super(image, width, height, x, y);
@@ -93,9 +93,9 @@ permalink: /background2
       }
     }
 
-    // Main game world class
+    // creates the game itself.
     class GameWorld {
-      static gameSpeed = 5; // Global speed modifier
+      static gameSpeed = 5; // modifies the speed of the game
 
       constructor(backgroundImg, spriteImg) {
         // Setup canvas dimensions to fit the window
@@ -106,7 +106,7 @@ permalink: /background2
         this.canvas.width = this.width;
         this.canvas.height = this.height;
 
-        // Style canvas to cover full screen
+        // makes the canvas fit full screen
         this.canvas.style.width = `${this.width}px`;
         this.canvas.style.height = `${this.height}px`;
         this.canvas.style.position = 'absolute';
@@ -127,7 +127,7 @@ permalink: /background2
           obj.update();   // Update position/animation
           obj.draw(this.ctx); // Draw to screen
         }
-        requestAnimationFrame(this.gameLoop.bind(this)); // Loop forever
+        requestAnimationFrame(this.gameLoop.bind(this)); // loops sprite
       }
 
       // Start the game loop
@@ -136,7 +136,7 @@ permalink: /background2
       }
     }
 
-    // Create and start the game world
+    // creates and starts the game using the background and sprite images
     const world = new GameWorld(backgroundImg, spriteImg);
     world.start();
   }
