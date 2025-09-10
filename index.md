@@ -4,24 +4,17 @@ title: I'm [Your Full Name]
 hide: true
 ---
 
-### Me and Team
-
+### me !!
+<p style="color: #383fa4;">
 Hi! My name is Kailyn Sanford.
-
-| Role         | Name     | Repo Location                       | Stream                | Repo Name |
-|--------------|----------|-------------------------------------|-----------------------|-----------|
-| Scrum Master | John     | github.com/jm1021/student           | upstream (OCS fork)   | student   |
-| Scrummer     | Torin    | github.com/torin/student            | downstream (fork)     | student   |
-| Scrummer     | Avantika | github.com/avantika/student         | downstream (fork)     | student   |
-| Scrummer     | Aadit    | github.com/aaadit/student           | downstream (fork)     | student   |
+</p>
 
 
-## socials
-
-
-<a href="https://x.com" 
-   style="background-color: #dddfdeff;
-          color: #1f1f8eff;
+### socials !!
+<div style="display: flex; flex-wrap: wrap; gap:10px;">
+<a href="https://github.com/kailynsanford" 
+   style="background-color: #dddfde;
+          color: #089b2f;
           text-align: center;
           font-size: 16px;
           margin: 4px 2px;
@@ -31,12 +24,27 @@ Hi! My name is Kailyn Sanford.
           border-radius: 6px;
           text-decoration: none;
           display: inline-block;">
-  twt!
+  github !
 </a>
 
-<a href="https://x.com" 
-   style="background-color: #dddfdeff;
-          color: #d72986ff;
+<a href="https://x.com/kaynextdoorz?s=21" 
+   style="background-color: #dddfde;
+          color: #1f1f8e;
+          text-align: center;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+          padding: 10px 24px;
+          border: none;
+          border-radius: 6px;
+          text-decoration: none;
+          display: inline-block;">
+  twt !
+</a>
+
+<a href="https://instagram.com/kailynsanford_" 
+   style="background-color: #dddfde;
+          color: #d72986;
           text-align: center;
           font-size: 16px;
           margin: 4px 2px;
@@ -49,9 +57,9 @@ Hi! My name is Kailyn Sanford.
   insta !
 </a>
 
-<a href="https://x.com" 
-   style="background-color: #dddfdeff;
-          color: #4d089cff;
+<a href="https://discordapp.com/users/kaybay__" 
+   style="background-color: #dddfde;
+          color: #4d089c; 
           text-align: center;
           font-size: 16px;
           margin: 4px 2px;
@@ -63,4 +71,7 @@ Hi! My name is Kailyn Sanford.
           display: inline-block;">
   disc !
 </a>
-
+</div>
+<div style="display: flex; flex-wrap: wrap;">
+<img src="{{site.baseurl}}/media/assets/haru_urara.gif" alt="haru urara">
+</div>
